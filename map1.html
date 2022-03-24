@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_89322edb32c24e658d93170379a2adc7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_89322edb32c24e658d93170379a2adc7" ></div>
+        
+</body>
+<script>    
+    
+            var map_89322edb32c24e658d93170379a2adc7 = L.map(
+                "map_89322edb32c24e658d93170379a2adc7",
+                {
+                    center: [55.2802307, 86.1141404],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d7e01fa25f784b89acddb32b4b7d2835 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_89322edb32c24e658d93170379a2adc7);
+        
+    
+            var marker_cbb7c1a55d0f43b394223e0713eb88b3 = L.marker(
+                [55.27947720076032, 86.11650098990353],
+                {}
+            ).addTo(map_89322edb32c24e658d93170379a2adc7);
+        
+    
+            var icon_502cb2f799884910b9bd41f4e4780592 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_cbb7c1a55d0f43b394223e0713eb88b3.setIcon(icon_502cb2f799884910b9bd41f4e4780592);
+        
+    
+        var popup_3cc4c223193e4f8f83916324e1eedf7e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_daf3d405fade46ab9fcf74e6c577f6a3 = $(`<div id="html_daf3d405fade46ab9fcf74e6c577f6a3" style="width: 100.0%; height: 100.0%;">'Колодец без говна'</div>`)[0];
+            popup_3cc4c223193e4f8f83916324e1eedf7e.setContent(html_daf3d405fade46ab9fcf74e6c577f6a3);
+        
+
+        marker_cbb7c1a55d0f43b394223e0713eb88b3.bindPopup(popup_3cc4c223193e4f8f83916324e1eedf7e)
+        ;
+
+        
+    
+    
+            var marker_1a45341a6b5a484885a419dddd64ebf7 = L.marker(
+                [55.28002059116085, 86.1178289045272],
+                {}
+            ).addTo(map_89322edb32c24e658d93170379a2adc7);
+        
+    
+            var icon_2069083773a941698a80fb9aee455cdf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_1a45341a6b5a484885a419dddd64ebf7.setIcon(icon_2069083773a941698a80fb9aee455cdf);
+        
+    
+        var popup_7c67e7b2237846f892297e66d23e3e9c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca5887ee49ca436f92eca80f4b58ddfb = $(`<div id="html_ca5887ee49ca436f92eca80f4b58ddfb" style="width: 100.0%; height: 100.0%;">'Колодец с говном'</div>`)[0];
+            popup_7c67e7b2237846f892297e66d23e3e9c.setContent(html_ca5887ee49ca436f92eca80f4b58ddfb);
+        
+
+        marker_1a45341a6b5a484885a419dddd64ebf7.bindPopup(popup_7c67e7b2237846f892297e66d23e3e9c)
+        ;
+
+        
+    
+</script>
